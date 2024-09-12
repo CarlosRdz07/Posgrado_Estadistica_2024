@@ -6,3 +6,4 @@ Material del curso de Experimentación y Métodos Estadísticos
 + Semana3: Proxima Semana
 + semana4: Clase teorica de estadistica
 + semana5. Trabajos con datos y pruebas de T 
++ semana6: Actividad con Anova 
