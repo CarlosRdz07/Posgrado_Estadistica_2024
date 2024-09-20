@@ -7,4 +7,5 @@ Material del curso de Experimentación y Métodos Estadísticos
 + semana4: Clase teorica de estadistica
 + semana5. Trabajos con datos y pruebas de T 
 + semana6: Actividad con Anova 
-+ semana : Actividad correlación 
++ semana7 : Actividad correlación 
++ semana7: Ejercicio de erupciones 
