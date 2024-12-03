@@ -1,0 +1,35 @@
+# Anova
+
+Sitios <- read.csv("Datos_Rascon_Anova1.csv", header = T)
+
+tapply(Sitios$DAP, Sitios$Paraje, mean)
+tapply(Sitios$EDAD, Sitios$Paraje, mean)
+
+boxplot(Sitios$DAP ~ Sitios$Paraje)
+
+shapiro.test(Sitios$DAP)
+#data:  Sitios$DAP
+W = 0.96548, p-value = 0.003575
+
+bartlett.test(Sitios$DAP ~ Sitios$Paraje)
+#Bartlett's K-squared = 6.6622, df = 3, p-value = 0.08348
+
+#Los datos de Dap no son normales, aunque su varianza si 
+
+Sitios$DAP_t <- log(Sitios$DAP+1)
+Sitios$DAP_t <- sqrt(Sitios$DAP)
+
+shapiro.test(Sitios$DAP_t)
+
+boxplot(Sitios$DAP_t ~ Sitios$Paraje)
+
+mean(Sitios$DAP_t^2)
+mean(Sitios$DAP)
+
+sit.aov <- aov(Sitios$DAP_t ~ Sitios$Paraje)
+summary(sit.aov)
+
+#Prueba de tukey
+TukeyHSD(sit.aov)
+
+plot(TukeyHSD(sit.aov))
