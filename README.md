@@ -10,3 +10,5 @@ Material del curso de Experimentación y Métodos Estadísticos
 + Semana 7: Actividad sobre correlación, seguida de la elaboración de una actividad, donde se explorarán técnicas estadísticas para examinar relaciones entre variables.
 + Semana 7: Ejercicio práctico sobre erupciones, en el que se aplicarán métodos estadísticos para analizar y modelar datos relacionados con fenómenos naturales.
 + Semana 8: Examen
+
+![image](https://github.com/user-attachments/assets/f1ce1358-29a8-4a36-8d90-3899495cfeee)
